@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    
+    <title>Frontend Mentor | Interactive card details form</title>
+
+  </head>
+  <body>
+    <div class="cards-image-container">
+      <div class="card-front-image-container">
+        <img src="./images/card-logo.svg" alt="A credit card logo">
+        <div class="numbers-container">
+          <div class="block-numbers">
+            <span class="card-image-number">0</span>
+            <span class="card-image-number">0</span>
+            <span class="card-image-number">0</span>
+            <span class="card-image-number">0</span>
+          </div>
+          <div class="block-numbers">
+            <span class="card-image-number">0</span>
+            <span class="card-image-number">0</span>
+            <span class="card-image-number">0</span>
+            <span class="card-image-number">0</span>
+          </div>
+          <div class="block-numbers">
+            <span class="card-image-number">0</span>
+            <span class="card-image-number">0</span>
+            <span class="card-image-number">0</span>
+            <span class="card-image-number">0</span>
+          </div>
+          <div class="block-numbers">
+            <span class="card-image-number">0</span>
+            <span class="card-image-number">0</span>
+            <span class="card-image-number">0</span>
+            <span class="card-image-number">0</span>
+          </div>
+        </div>
+        <div class="name-expiringDate-container">
+          <span class="card-name" id="card-name">
+            Jane Appleseed
+          </span>
+          <div class="card-expiringDate-container">
+            <span class="expiringDate-number" id="card-image-month">00</span>
+            /
+            <span class="expiringDate-number" id="card-image-year">00</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-back-image-container">
+        <div class="card-back-cvc-container">
+          <span class="card-back-cvc-number" id="card-image-cvc">000</span>
+        </div>
+      </div>
+    </div>
+    <div class="form-container">
+      <form>
+        <div class="form-unsubmitted" id="form-unsubmitted">
+          <div class="input-name-container">
+            <label for="input-name">Cardholder Name</label>
+            <input type="text" name="input-name" id="input-name" class="input-name" placeholder="e.g. Jane Appleseed" required autofocus>
+            <span class="default-error-message" id="default-error-message1">Can't be blank</span>
+          </div>
+          <div class="input-card-number-container">
+            <label for="input-card-number">Card Number</label>
+            <input type="text" name="input-card-number" id="input-card-number" class="input-card-number" placeholder="e.g. 1234 5678 9123 0000" minlength="19" required>
+            <span class="default-error-message" id="default-error-message2">Can't be blank</span>
+          </div>
+          <fieldset class="card-info-fieldset">
+            <div class="input-date-container">
+              <label for="input-month">Exp. Date (MM/YY)</label>
+              <div class="input-month-year-container">
+                <input type="number" name="input-month" id="input-month" class="input-month" placeholder="MM" min="1" max="12" required>
+                <input type="number" name="input-year" id="input-year" class="input-year" placeholder="YY" min="0" max="99" required>
+              </div>
+              <span class="default-error-message" id="default-error-message3">Can't be blank</span>
+            </div>
+            <div class="cvc-container">
+              <label for="input-cvc">CVC</label>
+              <input type="number" name="input-cvc" id="input-cvc" class="input-cvc" placeholder="e.g. 123" min="0" max="999" required>
+              <span class="default-error-message" id="default-error-message4">Can't be blank</span>
+            </div>
+          </fieldset>
+          <button type="button" class="submit-button" id="submit-button">Confirm</button>
+        </div>
+        <div class="form-submitted hidden" id="form-submitted">
+          <div class="form-submitted-icon"></div>
+          <span class="thank-you">Thank you!</span>
+          <span class="confirming-message">We've added your card details</span>
+          <a href="./index.html" class="continue-button">Continue</a>
+        </div>
+      </form>
+    </div>
+    <script src="./script/index.js"></script>
+  </body>
+</html>

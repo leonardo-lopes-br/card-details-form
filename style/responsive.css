@@ -1,0 +1,75 @@
+@media screen and (max-width: 969px) {
+    body {
+        align-items: center;
+        flex-direction: column;
+        gap: 60px;
+        background-size: 100% 33.33333333333333%;
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .cards-image-container {
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 0px;
+        width: 100%;
+    }
+
+    .card-front-image-container,
+    .card-back-image-container {
+        width: 285px;
+        height: 150px;
+    }
+
+    .card-back-image-container {
+        position: relative;
+        top: 30px;
+        left: 30px;
+        z-index: 1;
+    }
+
+    .card-front-image-container {
+        align-self: auto;
+        justify-self: center;
+        padding: 15px;
+        z-index: 2;
+        bottom: 33px;
+        right: 30px;
+        position: relative;
+    }
+
+    .card-front-image-container img {
+        width: 55px;
+        height: 31px;
+    }
+
+    .numbers-container {
+        font-size: 1.1rem;
+        gap: 10px;
+        letter-spacing: 2px;
+        margin-top: 30px;
+    }
+
+    .name-expiringDate-container {
+        font-size: 0.54rem;
+        color: hsl(270, 3%, 87%);
+        justify-content: space-between;
+        letter-spacing: 2px;
+        margin-top: 19px;
+    }
+
+    
+    .card-back-cvc-container {
+        font-size: 0.75rem;
+        top: 69px;
+        right: 40px;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    form input {
+        padding: 15px;
+    }
+}
